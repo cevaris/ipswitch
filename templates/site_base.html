@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="robots" content="noindex">
+	<link rel="shortcut icon" href="{{STATIC_URL}}images/galaxy.ico">
+	<script src="{{STATIC_URL}}js/kamino.js" type="application/javascript"></script>
+    <script src="{{STATIC_URL}}js/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="{{STATIC_URL}}js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+    <script src="{{STATIC_URL}}js/taggit.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="{{STATIC_URL}}css/jquery-ui-1.8.23.custom.css" type="text/css"/>
+	<link rel="stylesheet" href="{{STATIC_URL}}css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="{{STATIC_URL}}css/stylesheet.css" type="text/css"/>
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+	
+<div id="wrapper">
+
+
+
+
+
+
+
+	<div id="header">
+		<span>
+			<ul id="nav">
+				{% include 'navigation.html' %}
+			</ul>
+		</span>
+		
+		<span id="account">
+	  	{% if user.is_authenticated %}
+	  		<span>
+	  			{% if account %}
+		  			<a href="{% url account account.slug %}">{% if account.user.first_name %}{{account.user.first_name|title}}{% else %}{{account.user.username}}{% endif %}</a>
+		  			&#124; 
+	  			{% endif %}
+	  			<a href="{% url account_logout %}">Logout</a>
+	  		</span>
+	  	{% else %}
+	  		<span>
+	  			<a href="{% url account_create %} " >Sign up</a>
+	  			&#124; 
+	  			<a href="{% url account_login %}?next={{path}}" >Login</a>
+  			</span> 
+	  	{% endif %}
+	 	</span>
+	 	
+	</div><!-- header -->
+
+
+
+
+
+
+
+	<div id="content">
+		{% block message %}{{message}}{% endblock %}
+		{% block content %}{% endblock %}
+	</div><!-- content -->
+
+
+
+
+
+
+
+	<div id="footer">
+		<p>Moving the world into action</p>
+		<p>Copyright &copy; 2012 Kamino</p>
+	</div><!-- footer -->
+	
+	
+</div><!-- wrapper -->
+
+
+
+
+
+
+
+
+<script>
+	jQuery(document).ajaxSend(function(event, xhr, settings) {
+		function getCookie(name) {
+	        var cookieValue = null;
+	        if (document.cookie && document.cookie != '') {
+	            var cookies = document.cookie.split(';');
+	            for (var i = 0; i < cookies.length; i++) {
+	                var cookie = jQuery.trim(cookies[i]);
+	                // Does this cookie string begin with the name we want?
+	                if (cookie.substring(0, name.length + 1) == (name + '=')) {
+	                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+	                    break;
+	                }
+	            }
+	        }
+	        return cookieValue;
+	    }
+	    function sameOrigin(url) {
+	        // url could be relative or scheme relative or absolute
+	        var host = document.location.host; // host + port
+	        var protocol = document.location.protocol;
+	        var sr_origin = '//' + host;
+	        var origin = protocol + sr_origin;
+	        // Allow absolute or scheme relative URLs to same origin
+	        return (url == origin || url.slice(0, origin.length + 1) == origin + '/') ||
+	            (url == sr_origin || url.slice(0, sr_origin.length + 1) == sr_origin + '/') ||
+	            // or any other URL that isn't scheme relative or absolute i.e relative.
+	            !(/^(\/\/|http:|https:).*/.test(url));
+	    }
+	    function safeMethod(method) {
+	        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+	    }
+	
+	    if (!safeMethod(settings.type) && sameOrigin(settings.url)) {
+	        xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+	    }
+	});
+</script>
+</body>
+</html>

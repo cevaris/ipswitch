@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2318D0A6166AB520006DE468 /* Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2318D0A5166AB520006DE468 /* Validation.m */; };
+		2318D106166AC305006DE468 /* MyBetLogoSized.png in Resources */ = {isa = PBXBuildFile; fileRef = 2318D105166AC305006DE468 /* MyBetLogoSized.png */; };
+		532111E91624BFDD00B04901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532111E81624BFDD00B04901 /* UIKit.framework */; };
+		532111EB1624BFDD00B04901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532111EA1624BFDD00B04901 /* Foundation.framework */; };
+		532111ED1624BFDD00B04901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532111EC1624BFDD00B04901 /* CoreGraphics.framework */; };
+		532111F31624BFDD00B04901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 532111F11624BFDD00B04901 /* InfoPlist.strings */; };
+		532111F51624BFDD00B04901 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 532111F41624BFDD00B04901 /* main.m */; };
+		532111FB1624BFDD00B04901 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 532111FA1624BFDD00B04901 /* Default.png */; };
+		532111FD1624BFDD00B04901 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 532111FC1624BFDD00B04901 /* Default@2x.png */; };
+		532111FF1624BFDD00B04901 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 532111FE1624BFDD00B04901 /* Default-568h@2x.png */; };
+		532112021624BFDD00B04901 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532112001624BFDD00B04901 /* MainStoryboard_iPhone.storyboard */; };
+		532112051624BFDD00B04901 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532112031624BFDD00B04901 /* MainStoryboard_iPad.storyboard */; };
+		5321120A1624BFDD00B04901 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 532112091624BFDD00B04901 /* first.png */; };
+		5321120C1624BFDD00B04901 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321120B1624BFDD00B04901 /* first@2x.png */; };
+		532112111624BFDE00B04901 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 532112101624BFDE00B04901 /* second.png */; };
+		532112131624BFDE00B04901 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 532112121624BFDE00B04901 /* second@2x.png */; };
+		5321121B1624BFDE00B04901 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321121A1624BFDE00B04901 /* SenTestingKit.framework */; };
+		5321121C1624BFDE00B04901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532111E81624BFDD00B04901 /* UIKit.framework */; };
+		5321121D1624BFDE00B04901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532111EA1624BFDD00B04901 /* Foundation.framework */; };
+		532112251624BFDE00B04901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 532112231624BFDE00B04901 /* InfoPlist.strings */; };
+		532112281624BFDE00B04901 /* ipswitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 532112271624BFDE00B04901 /* ipswitchTests.m */; };
+		532112321624C62300B04901 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 532112311624C62300B04901 /* AppDelegate.m */; };
+		532610341671BA2C00B88FA5 /* BetCreateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 532610331671BA2C00B88FA5 /* BetCreateRequest.m */; };
+		532610381673DC8700B88FA5 /* Bet.m in Sources */ = {isa = PBXBuildFile; fileRef = 532610371673DC8700B88FA5 /* Bet.m */; };
+		5326103C1673DEFB00B88FA5 /* ActiveBetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5326103B1673DEFB00B88FA5 /* ActiveBetCell.m */; };
+		5326103F1673DF0D00B88FA5 /* HistoryBetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5326103E1673DF0D00B88FA5 /* HistoryBetCell.m */; };
+		532610421673F58600B88FA5 /* ActiveBetsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 532610411673F58500B88FA5 /* ActiveBetsRequest.m */; };
+		532B5D401667FBC600999C02 /* profile-empty.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 532B5D3F1667FBC600999C02 /* profile-empty.jpeg */; };
+		532B5D441667FDB000999C02 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B5D431667FDB000999C02 /* MainMenuViewController.m */; };
+		532B5D4716680ABB00999C02 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B5D4616680ABB00999C02 /* FriendsViewController.m */; };
+		532B5D4A16680B0800999C02 /* ActiveBetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B5D4916680B0800999C02 /* ActiveBetsViewController.m */; };
+		532B5D4D16680B6B00999C02 /* CreateBetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B5D4C16680B6B00999C02 /* CreateBetViewController.m */; };
+		532B5D5016680CBF00999C02 /* BetHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B5D4F16680CBE00999C02 /* BetHistoryViewController.m */; };
+		532B5D5316680CF700999C02 /* BetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B5D5216680CF700999C02 /* BetViewController.m */; };
+		532B5D56166A94E900999C02 /* BetUserLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 532B5D55166A94E900999C02 /* BetUserLoginRequest.m */; };
+		5361AB6816652B63001A1D5F /* BetsOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5361AB6716652B63001A1D5F /* BetsOverviewViewController.m */; };
+		5361AB6B16652F97001A1D5F /* settings-icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5361AB6A16652F97001A1D5F /* settings-icon.jpeg */; };
+		5361AB7016653CE2001A1D5F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5361AB6F16653CE2001A1D5F /* LoginViewController.m */; };
+		536855DE16373FE2003B3A6F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536855DD16373FE2003B3A6F /* ProfileViewController.m */; };
+		539D2582166E901700441F84 /* BetAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 539D2581166E901700441F84 /* BetAccount.m */; };
+		539D25851670158800441F84 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539D25841670158800441F84 /* CoreData.framework */; };
+		539D2588167166F200441F84 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 539D2587167166F100441F84 /* SettingsViewController.m */; };
+		539D258B1671A90900441F84 /* BetUserLogoutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 539D258A1671A90900441F84 /* BetUserLogoutRequest.m */; };
+		53A48868166E69A3008F8BCF /* DataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A48867166E69A3008F8BCF /* DataRequest.m */; };
+		53C8C98C166AA9AF0069EA59 /* CreateBetUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8C98B166AA9AF0069EA59 /* CreateBetUserViewController.m */; };
+		53C8C990166AAAF30069EA59 /* BetUserCreateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8C98F166AAAF30069EA59 /* BetUserCreateRequest.m */; };
+		53E4812E16783899006FC83B /* BetDecisionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4812D16783899006FC83B /* BetDecisionRequest.m */; };
+		53E4813216784F0D006FC83B /* BetAccountRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4813116784F0C006FC83B /* BetAccountRequest.m */; };
+		53E4813516792F15006FC83B /* BetHistoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4813416792F15006FC83B /* BetHistoryRequest.m */; };
+		53E4813816798630006FC83B /* SelectProfileImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E481371679862F006FC83B /* SelectProfileImageViewController.m */; };
+		53E4813E167992B8006FC83B /* BetUserProfileImageUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4813D167992B8006FC83B /* BetUserProfileImageUploadRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5321121E1624BFDE00B04901 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 532111DB1624BFDD00B04901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 532111E31624BFDD00B04901;
+			remoteInfo = ipswitch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2318D0A4166AB520006DE468 /* Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validation.h; sourceTree = "<group>"; };
+		2318D0A5166AB520006DE468 /* Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validation.m; sourceTree = "<group>"; };
+		2318D105166AC305006DE468 /* MyBetLogoSized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MyBetLogoSized.png; path = static/MyBetLogoSized.png; sourceTree = "<group>"; };
+		532111E41624BFDD00B04901 /* ipswitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ipswitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		532111E81624BFDD00B04901 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		532111EA1624BFDD00B04901 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		532111EC1624BFDD00B04901 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		532111F01624BFDD00B04901 /* ipswitch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ipswitch-Info.plist"; sourceTree = "<group>"; };
+		532111F21624BFDD00B04901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		532111F41624BFDD00B04901 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		532111F61624BFDD00B04901 /* ipswitch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ipswitch-Prefix.pch"; sourceTree = "<group>"; };
+		532111F71624BFDD00B04901 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		532111FA1624BFDD00B04901 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		532111FC1624BFDD00B04901 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		532111FE1624BFDD00B04901 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		532112011624BFDD00B04901 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		532112041624BFDD00B04901 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		532112091624BFDD00B04901 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		5321120B1624BFDD00B04901 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		532112101624BFDE00B04901 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		532112121624BFDE00B04901 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		532112191624BFDE00B04901 /* ipswitchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ipswitchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5321121A1624BFDE00B04901 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		532112221624BFDE00B04901 /* ipswitchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ipswitchTests-Info.plist"; sourceTree = "<group>"; };
+		532112241624BFDE00B04901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		532112261624BFDE00B04901 /* ipswitchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ipswitchTests.h; sourceTree = "<group>"; };
+		532112271624BFDE00B04901 /* ipswitchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ipswitchTests.m; sourceTree = "<group>"; };
+		532112311624C62300B04901 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		532610321671BA2C00B88FA5 /* BetCreateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetCreateRequest.h; sourceTree = "<group>"; };
+		532610331671BA2C00B88FA5 /* BetCreateRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetCreateRequest.m; sourceTree = "<group>"; };
+		532610361673DC8700B88FA5 /* Bet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bet.h; sourceTree = "<group>"; };
+		532610371673DC8700B88FA5 /* Bet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bet.m; sourceTree = "<group>"; };
+		5326103A1673DEFB00B88FA5 /* ActiveBetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveBetCell.h; sourceTree = "<group>"; };
+		5326103B1673DEFB00B88FA5 /* ActiveBetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveBetCell.m; sourceTree = "<group>"; };
+		5326103D1673DF0D00B88FA5 /* HistoryBetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryBetCell.h; sourceTree = "<group>"; };
+		5326103E1673DF0D00B88FA5 /* HistoryBetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryBetCell.m; sourceTree = "<group>"; };
+		532610401673F58500B88FA5 /* ActiveBetsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveBetsRequest.h; sourceTree = "<group>"; };
+		532610411673F58500B88FA5 /* ActiveBetsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveBetsRequest.m; sourceTree = "<group>"; };
+		532B5D3F1667FBC600999C02 /* profile-empty.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "profile-empty.jpeg"; sourceTree = "<group>"; };
+		532B5D421667FDB000999C02 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		532B5D431667FDB000999C02 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		532B5D4516680ABB00999C02 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		532B5D4616680ABB00999C02 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		532B5D4816680B0800999C02 /* ActiveBetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveBetsViewController.h; sourceTree = "<group>"; };
+		532B5D4916680B0800999C02 /* ActiveBetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveBetsViewController.m; sourceTree = "<group>"; };
+		532B5D4B16680B6B00999C02 /* CreateBetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateBetViewController.h; sourceTree = "<group>"; };
+		532B5D4C16680B6B00999C02 /* CreateBetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateBetViewController.m; sourceTree = "<group>"; };
+		532B5D4E16680CBE00999C02 /* BetHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetHistoryViewController.h; sourceTree = "<group>"; };
+		532B5D4F16680CBE00999C02 /* BetHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetHistoryViewController.m; sourceTree = "<group>"; };
+		532B5D5116680CF700999C02 /* BetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetViewController.h; sourceTree = "<group>"; };
+		532B5D5216680CF700999C02 /* BetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetViewController.m; sourceTree = "<group>"; };
+		532B5D54166A94E900999C02 /* BetUserLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetUserLoginRequest.h; sourceTree = "<group>"; };
+		532B5D55166A94E900999C02 /* BetUserLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetUserLoginRequest.m; sourceTree = "<group>"; };
+		5361AB6616652B63001A1D5F /* BetsOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetsOverviewViewController.h; sourceTree = "<group>"; };
+		5361AB6716652B63001A1D5F /* BetsOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetsOverviewViewController.m; sourceTree = "<group>"; };
+		5361AB6A16652F97001A1D5F /* settings-icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "settings-icon.jpeg"; sourceTree = "<group>"; };
+		5361AB6E16653CE1001A1D5F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		5361AB6F16653CE2001A1D5F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		536855DC16373FE2003B3A6F /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		536855DD16373FE2003B3A6F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		539D2580166E901700441F84 /* BetAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetAccount.h; sourceTree = "<group>"; };
+		539D2581166E901700441F84 /* BetAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetAccount.m; sourceTree = "<group>"; };
+		539D25841670158800441F84 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		539D2586167166F100441F84 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		539D2587167166F100441F84 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		539D25891671A90900441F84 /* BetUserLogoutRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetUserLogoutRequest.h; sourceTree = "<group>"; };
+		539D258A1671A90900441F84 /* BetUserLogoutRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetUserLogoutRequest.m; sourceTree = "<group>"; };
+		53A48866166E69A3008F8BCF /* DataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataRequest.h; sourceTree = "<group>"; };
+		53A48867166E69A3008F8BCF /* DataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataRequest.m; sourceTree = "<group>"; };
+		53C8C98A166AA9AF0069EA59 /* CreateBetUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateBetUserViewController.h; sourceTree = "<group>"; };
+		53C8C98B166AA9AF0069EA59 /* CreateBetUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateBetUserViewController.m; sourceTree = "<group>"; };
+		53C8C98E166AAAF30069EA59 /* BetUserCreateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetUserCreateRequest.h; sourceTree = "<group>"; };
+		53C8C98F166AAAF30069EA59 /* BetUserCreateRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetUserCreateRequest.m; sourceTree = "<group>"; };
+		53E4812C16783899006FC83B /* BetDecisionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetDecisionRequest.h; sourceTree = "<group>"; };
+		53E4812D16783899006FC83B /* BetDecisionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetDecisionRequest.m; sourceTree = "<group>"; };
+		53E4813016784F0C006FC83B /* BetAccountRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetAccountRequest.h; sourceTree = "<group>"; };
+		53E4813116784F0C006FC83B /* BetAccountRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetAccountRequest.m; sourceTree = "<group>"; };
+		53E4813316792F14006FC83B /* BetHistoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetHistoryRequest.h; sourceTree = "<group>"; };
+		53E4813416792F15006FC83B /* BetHistoryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetHistoryRequest.m; sourceTree = "<group>"; };
+		53E481361679862E006FC83B /* SelectProfileImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectProfileImageViewController.h; sourceTree = "<group>"; };
+		53E481371679862F006FC83B /* SelectProfileImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectProfileImageViewController.m; sourceTree = "<group>"; };
+		53E4813C167992B8006FC83B /* BetUserProfileImageUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetUserProfileImageUploadRequest.h; sourceTree = "<group>"; };
+		53E4813D167992B8006FC83B /* BetUserProfileImageUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetUserProfileImageUploadRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		532111E11624BFDD00B04901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				539D25851670158800441F84 /* CoreData.framework in Frameworks */,
+				532111E91624BFDD00B04901 /* UIKit.framework in Frameworks */,
+				532111EB1624BFDD00B04901 /* Foundation.framework in Frameworks */,
+				532111ED1624BFDD00B04901 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532112151624BFDE00B04901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5321121B1624BFDE00B04901 /* SenTestingKit.framework in Frameworks */,
+				5321121C1624BFDE00B04901 /* UIKit.framework in Frameworks */,
+				5321121D1624BFDE00B04901 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		532111D91624BFDD00B04901 = {
+			isa = PBXGroup;
+			children = (
+				532111EE1624BFDD00B04901 /* ipswitch */,
+				532112201624BFDE00B04901 /* ipswitchTests */,
+				532111E71624BFDD00B04901 /* Frameworks */,
+				532111E51624BFDD00B04901 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		532111E51624BFDD00B04901 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				532111E41624BFDD00B04901 /* ipswitch.app */,
+				532112191624BFDE00B04901 /* ipswitchTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		532111E71624BFDD00B04901 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				539D25841670158800441F84 /* CoreData.framework */,
+				532111E81624BFDD00B04901 /* UIKit.framework */,
+				532111EA1624BFDD00B04901 /* Foundation.framework */,
+				532111EC1624BFDD00B04901 /* CoreGraphics.framework */,
+				5321121A1624BFDE00B04901 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		532111EE1624BFDD00B04901 /* ipswitch */ = {
+			isa = PBXGroup;
+			children = (
+				532B5D57166A953900999C02 /* requests */,
+				536855DB16373FB2003B3A6F /* views */,
+				536855D616373F26003B3A6F /* models */,
+				532111F71624BFDD00B04901 /* AppDelegate.h */,
+				532112311624C62300B04901 /* AppDelegate.m */,
+				532112001624BFDD00B04901 /* MainStoryboard_iPhone.storyboard */,
+				532112031624BFDD00B04901 /* MainStoryboard_iPad.storyboard */,
+				532112091624BFDD00B04901 /* first.png */,
+				5321120B1624BFDD00B04901 /* first@2x.png */,
+				532112101624BFDE00B04901 /* second.png */,
+				532112121624BFDE00B04901 /* second@2x.png */,
+				532111EF1624BFDD00B04901 /* Supporting Files */,
+			);
+			path = ipswitch;
+			sourceTree = "<group>";
+		};
+		532111EF1624BFDD00B04901 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				532B5D3F1667FBC600999C02 /* profile-empty.jpeg */,
+				2318D105166AC305006DE468 /* MyBetLogoSized.png */,
+				5361AB6A16652F97001A1D5F /* settings-icon.jpeg */,
+				532111F01624BFDD00B04901 /* ipswitch-Info.plist */,
+				532111F11624BFDD00B04901 /* InfoPlist.strings */,
+				532111F41624BFDD00B04901 /* main.m */,
+				532111F61624BFDD00B04901 /* ipswitch-Prefix.pch */,
+				532111FA1624BFDD00B04901 /* Default.png */,
+				532111FC1624BFDD00B04901 /* Default@2x.png */,
+				532111FE1624BFDD00B04901 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		532112201624BFDE00B04901 /* ipswitchTests */ = {
+			isa = PBXGroup;
+			children = (
+				532112261624BFDE00B04901 /* ipswitchTests.h */,
+				532112271624BFDE00B04901 /* ipswitchTests.m */,
+				532112211624BFDE00B04901 /* Supporting Files */,
+			);
+			path = ipswitchTests;
+			sourceTree = "<group>";
+		};
+		532112211624BFDE00B04901 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				532112221624BFDE00B04901 /* ipswitchTests-Info.plist */,
+				532112231624BFDE00B04901 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		532610391673DECB00B88FA5 /* tableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				5326103A1673DEFB00B88FA5 /* ActiveBetCell.h */,
+				5326103B1673DEFB00B88FA5 /* ActiveBetCell.m */,
+				5326103D1673DF0D00B88FA5 /* HistoryBetCell.h */,
+				5326103E1673DF0D00B88FA5 /* HistoryBetCell.m */,
+			);
+			name = tableViewCells;
+			sourceTree = "<group>";
+		};
+		532B5D57166A953900999C02 /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				532B5D54166A94E900999C02 /* BetUserLoginRequest.h */,
+				532B5D55166A94E900999C02 /* BetUserLoginRequest.m */,
+				53C8C98E166AAAF30069EA59 /* BetUserCreateRequest.h */,
+				53C8C98F166AAAF30069EA59 /* BetUserCreateRequest.m */,
+				53A48866166E69A3008F8BCF /* DataRequest.h */,
+				53A48867166E69A3008F8BCF /* DataRequest.m */,
+				539D25891671A90900441F84 /* BetUserLogoutRequest.h */,
+				539D258A1671A90900441F84 /* BetUserLogoutRequest.m */,
+				532610321671BA2C00B88FA5 /* BetCreateRequest.h */,
+				532610331671BA2C00B88FA5 /* BetCreateRequest.m */,
+				532610401673F58500B88FA5 /* ActiveBetsRequest.h */,
+				532610411673F58500B88FA5 /* ActiveBetsRequest.m */,
+				53E4812C16783899006FC83B /* BetDecisionRequest.h */,
+				53E4812D16783899006FC83B /* BetDecisionRequest.m */,
+				53E4813016784F0C006FC83B /* BetAccountRequest.h */,
+				53E4813116784F0C006FC83B /* BetAccountRequest.m */,
+				53E4813316792F14006FC83B /* BetHistoryRequest.h */,
+				53E4813416792F15006FC83B /* BetHistoryRequest.m */,
+				53E4813C167992B8006FC83B /* BetUserProfileImageUploadRequest.h */,
+				53E4813D167992B8006FC83B /* BetUserProfileImageUploadRequest.m */,
+			);
+			name = requests;
+			sourceTree = "<group>";
+		};
+		536855D616373F26003B3A6F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				539D2580166E901700441F84 /* BetAccount.h */,
+				539D2581166E901700441F84 /* BetAccount.m */,
+				532610361673DC8700B88FA5 /* Bet.h */,
+				532610371673DC8700B88FA5 /* Bet.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		536855DB16373FB2003B3A6F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				532610391673DECB00B88FA5 /* tableViewCells */,
+				536855DC16373FE2003B3A6F /* ProfileViewController.h */,
+				536855DD16373FE2003B3A6F /* ProfileViewController.m */,
+				5361AB6616652B63001A1D5F /* BetsOverviewViewController.h */,
+				5361AB6716652B63001A1D5F /* BetsOverviewViewController.m */,
+				5361AB6E16653CE1001A1D5F /* LoginViewController.h */,
+				5361AB6F16653CE2001A1D5F /* LoginViewController.m */,
+				532B5D421667FDB000999C02 /* MainMenuViewController.h */,
+				532B5D431667FDB000999C02 /* MainMenuViewController.m */,
+				532B5D4516680ABB00999C02 /* FriendsViewController.h */,
+				532B5D4616680ABB00999C02 /* FriendsViewController.m */,
+				532B5D4816680B0800999C02 /* ActiveBetsViewController.h */,
+				532B5D4916680B0800999C02 /* ActiveBetsViewController.m */,
+				532B5D4B16680B6B00999C02 /* CreateBetViewController.h */,
+				532B5D4C16680B6B00999C02 /* CreateBetViewController.m */,
+				532B5D4E16680CBE00999C02 /* BetHistoryViewController.h */,
+				532B5D4F16680CBE00999C02 /* BetHistoryViewController.m */,
+				532B5D5116680CF700999C02 /* BetViewController.h */,
+				532B5D5216680CF700999C02 /* BetViewController.m */,
+				53C8C98A166AA9AF0069EA59 /* CreateBetUserViewController.h */,
+				53C8C98B166AA9AF0069EA59 /* CreateBetUserViewController.m */,
+				2318D0A4166AB520006DE468 /* Validation.h */,
+				2318D0A5166AB520006DE468 /* Validation.m */,
+				539D2586167166F100441F84 /* SettingsViewController.h */,
+				539D2587167166F100441F84 /* SettingsViewController.m */,
+				53E481361679862E006FC83B /* SelectProfileImageViewController.h */,
+				53E481371679862F006FC83B /* SelectProfileImageViewController.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		532111E31624BFDD00B04901 /* ipswitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5321122B1624BFDE00B04901 /* Build configuration list for PBXNativeTarget "ipswitch" */;
+			buildPhases = (
+				532111E01624BFDD00B04901 /* Sources */,
+				532111E11624BFDD00B04901 /* Frameworks */,
+				532111E21624BFDD00B04901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ipswitch;
+			productName = ipswitch;
+			productReference = 532111E41624BFDD00B04901 /* ipswitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		532112181624BFDE00B04901 /* ipswitchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5321122E1624BFDE00B04901 /* Build configuration list for PBXNativeTarget "ipswitchTests" */;
+			buildPhases = (
+				532112141624BFDE00B04901 /* Sources */,
+				532112151624BFDE00B04901 /* Frameworks */,
+				532112161624BFDE00B04901 /* Resources */,
+				532112171624BFDE00B04901 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5321121F1624BFDE00B04901 /* PBXTargetDependency */,
+			);
+			name = ipswitchTests;
+			productName = ipswitchTests;
+			productReference = 532112191624BFDE00B04901 /* ipswitchTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		532111DB1624BFDD00B04901 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = com.cu.ooad;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Cevaris;
+			};
+			buildConfigurationList = 532111DE1624BFDD00B04901 /* Build configuration list for PBXProject "ipswitch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 532111D91624BFDD00B04901;
+			productRefGroup = 532111E51624BFDD00B04901 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				532111E31624BFDD00B04901 /* ipswitch */,
+				532112181624BFDE00B04901 /* ipswitchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		532111E21624BFDD00B04901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532111F31624BFDD00B04901 /* InfoPlist.strings in Resources */,
+				532111FB1624BFDD00B04901 /* Default.png in Resources */,
+				532111FD1624BFDD00B04901 /* Default@2x.png in Resources */,
+				532111FF1624BFDD00B04901 /* Default-568h@2x.png in Resources */,
+				532112021624BFDD00B04901 /* MainStoryboard_iPhone.storyboard in Resources */,
+				532112051624BFDD00B04901 /* MainStoryboard_iPad.storyboard in Resources */,
+				5321120A1624BFDD00B04901 /* first.png in Resources */,
+				5321120C1624BFDD00B04901 /* first@2x.png in Resources */,
+				532112111624BFDE00B04901 /* second.png in Resources */,
+				532112131624BFDE00B04901 /* second@2x.png in Resources */,
+				5361AB6B16652F97001A1D5F /* settings-icon.jpeg in Resources */,
+				532B5D401667FBC600999C02 /* profile-empty.jpeg in Resources */,
+				2318D106166AC305006DE468 /* MyBetLogoSized.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532112161624BFDE00B04901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532112251624BFDE00B04901 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		532112171624BFDE00B04901 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		532111E01624BFDD00B04901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532111F51624BFDD00B04901 /* main.m in Sources */,
+				532112321624C62300B04901 /* AppDelegate.m in Sources */,
+				536855DE16373FE2003B3A6F /* ProfileViewController.m in Sources */,
+				5361AB6816652B63001A1D5F /* BetsOverviewViewController.m in Sources */,
+				5361AB7016653CE2001A1D5F /* LoginViewController.m in Sources */,
+				532B5D441667FDB000999C02 /* MainMenuViewController.m in Sources */,
+				532B5D4716680ABB00999C02 /* FriendsViewController.m in Sources */,
+				532B5D4A16680B0800999C02 /* ActiveBetsViewController.m in Sources */,
+				532B5D4D16680B6B00999C02 /* CreateBetViewController.m in Sources */,
+				532B5D5016680CBF00999C02 /* BetHistoryViewController.m in Sources */,
+				532B5D5316680CF700999C02 /* BetViewController.m in Sources */,
+				532B5D56166A94E900999C02 /* BetUserLoginRequest.m in Sources */,
+				53C8C98C166AA9AF0069EA59 /* CreateBetUserViewController.m in Sources */,
+				53C8C990166AAAF30069EA59 /* BetUserCreateRequest.m in Sources */,
+				2318D0A6166AB520006DE468 /* Validation.m in Sources */,
+				53A48868166E69A3008F8BCF /* DataRequest.m in Sources */,
+				539D2582166E901700441F84 /* BetAccount.m in Sources */,
+				539D2588167166F200441F84 /* SettingsViewController.m in Sources */,
+				539D258B1671A90900441F84 /* BetUserLogoutRequest.m in Sources */,
+				532610341671BA2C00B88FA5 /* BetCreateRequest.m in Sources */,
+				532610381673DC8700B88FA5 /* Bet.m in Sources */,
+				5326103C1673DEFB00B88FA5 /* ActiveBetCell.m in Sources */,
+				5326103F1673DF0D00B88FA5 /* HistoryBetCell.m in Sources */,
+				532610421673F58600B88FA5 /* ActiveBetsRequest.m in Sources */,
+				53E4812E16783899006FC83B /* BetDecisionRequest.m in Sources */,
+				53E4813216784F0D006FC83B /* BetAccountRequest.m in Sources */,
+				53E4813516792F15006FC83B /* BetHistoryRequest.m in Sources */,
+				53E4813816798630006FC83B /* SelectProfileImageViewController.m in Sources */,
+				53E4813E167992B8006FC83B /* BetUserProfileImageUploadRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532112141624BFDE00B04901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532112281624BFDE00B04901 /* ipswitchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5321121F1624BFDE00B04901 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 532111E31624BFDD00B04901 /* ipswitch */;
+			targetProxy = 5321121E1624BFDE00B04901 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		532111F11624BFDD00B04901 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				532111F21624BFDD00B04901 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		532112001624BFDD00B04901 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				532112011624BFDD00B04901 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		532112031624BFDD00B04901 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				532112041624BFDD00B04901 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		532112231624BFDE00B04901 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				532112241624BFDE00B04901 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		532112291624BFDE00B04901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5321122A1624BFDE00B04901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5321122C1624BFDE00B04901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ipswitch/ipswitch-Prefix.pch";
+				INFOPLIST_FILE = "ipswitch/ipswitch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5321122D1624BFDE00B04901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ipswitch/ipswitch-Prefix.pch";
+				INFOPLIST_FILE = "ipswitch/ipswitch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5321122F1624BFDE00B04901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ipswitch.app/ipswitch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ipswitch/ipswitch-Prefix.pch";
+				INFOPLIST_FILE = "ipswitchTests/ipswitchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		532112301624BFDE00B04901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ipswitch.app/ipswitch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ipswitch/ipswitch-Prefix.pch";
+				INFOPLIST_FILE = "ipswitchTests/ipswitchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		532111DE1624BFDD00B04901 /* Build configuration list for PBXProject "ipswitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532112291624BFDE00B04901 /* Debug */,
+				5321122A1624BFDE00B04901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5321122B1624BFDE00B04901 /* Build configuration list for PBXNativeTarget "ipswitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5321122C1624BFDE00B04901 /* Debug */,
+				5321122D1624BFDE00B04901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5321122E1624BFDE00B04901 /* Build configuration list for PBXNativeTarget "ipswitchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5321122F1624BFDE00B04901 /* Debug */,
+				532112301624BFDE00B04901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 532111DB1624BFDD00B04901 /* Project object */;
+}

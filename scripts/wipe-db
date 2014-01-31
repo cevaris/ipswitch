@@ -1,0 +1,11 @@
+python manage.py sqlclear core | python manage.py dbshell
+python manage.py sqlclear account | python manage.py dbshell
+python manage.py sqlclear bet | python manage.py dbshell
+python manage.py syncdb
+python manage.py createcachetable ipswitch_cache_table
+
+python manage.py loaddata fixtures/initial_data.json
+
+
+
+

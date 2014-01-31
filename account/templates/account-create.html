@@ -1,0 +1,47 @@
+{% extends "site_base.html" %}
+
+{% block title %}Create User{% endblock %}
+{% block content %}
+
+{% if form.errors %}
+	{% for error in form.non_field_errors %}
+		<div>{{error}}</div>
+	{% endfor %}
+	
+	{% for field in form %}
+		{% for error in field.errors %}
+			<div>{{error}}</div>
+		{% endfor %}
+	{% endfor %}
+{% endif %}
+
+<form action="{% url account_create  %}" method="post">
+	{% csrf_token %} 
+	<div>
+		<table>
+			<tr>
+				<td>{{form.first_name.label}}:</td> 
+				<td>{{form.first_name}}</td>
+			</tr>
+			<tr>
+				<td>{{form.last_name.label}}:</td> 
+				<td>{{form.last_name}}</td>
+			</tr>
+			<tr>
+				<td>{{form.email.label}}:</td>
+				<td>{{form.email}}</td>
+			</tr>
+			<tr>
+				<td>{{form.password.label}}:</td>
+				<td>{{form.password}} </td>
+			</tr>
+			<tr>
+				<td>{{form.password_confirm.label}}:</td>
+				<td>{{form.password_confirm}}</td>
+			</tr>
+		</table>
+	</div>
+	<input type="submit" />
+</form>
+
+{% endblock %}

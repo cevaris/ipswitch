@@ -1,0 +1,199 @@
+{% extends "site_base.html" %}
+
+{% block title %}{{account.user.first_name|title}} {{account.user.last_name|title}}{% endblock %}
+{% block content %}
+
+
+<h2>{{account.user.first_name|title}} {{account.user.last_name|title}}</h2>
+
+<br/>
+<div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	{% if account.applicant %}
+	<br/>
+	<div>
+		<table>
+			<tr>
+				<td><h4>Work History</h4></td>
+				<td colspan="2" align="right">
+					<input type="button" value="Add Job" onclick="window.location = '{% url work_create %}';"/>
+				</td>
+			</tr>
+			
+			{% for job in account.applicant.work_history.all %}
+				<tr>
+					<td>Company: </td>
+					<td>{{job.company_name|title}}</td>
+					<td>
+						<input type="button" value="Delete" onclick="window.location = '{% url work_delete job.slug %}';"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Title: </td>
+					<td>{{job.job_title|title}}</td>
+					<td>
+						<input type="button" value="Edit" onclick="window.location = '{% url work_edit job.slug %}';"/>
+					</td>
+				</tr>
+				<tr>											
+					<td>Started: </td>
+					<td>{{job.started}}</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>Ended: </td>
+					{% if job.ended %}
+					<td>{{job.ended}}</td>
+					{% else %}
+					<td>Present</td>
+					{% endif %}
+					<td> </td>
+				</tr>
+				<tr><td colspan="3"><br/></td></tr>
+			{% endfor %}
+		</table>
+	</div>
+	{% endif %}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	{% if account.applicant %}
+	<br/>
+	<div>
+		<table>
+			<tr>
+				<td><h4>Education</h4></td>
+				<td colspan="2" align="right">
+					<input type="button" value="Add School" onclick="window.location = '{% url education_create %}';"/>
+				</td>
+			</tr>
+			{% for school in account.applicant.education.all %}
+				<tr>
+					<td>School: </td>
+					<td>{{school.school|title}}</td>
+					<td>
+						<input type="button" value="Delete" onclick="window.location = '{% url education_delete school.slug %}';"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Major: </td>
+					<td>{{school.major|title}}</td>
+					<td>
+						<input type="button" value="Edit" onclick="window.location = '{% url education_edit school.slug %}';"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Degree: </td>
+					<td>{{school.degree|title}}</td>
+					<td> </td>
+				</tr>
+				<tr>											
+					<td>Started: </td>
+					<td>{{school.started}}</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>Ended: </td>
+					{% if school.ended %}
+					<td>{{school.ended}}</td>
+					{% else %}
+					<td>Present</td>
+					{% endif %}
+					<td> </td>
+				</tr>
+				<tr><td colspan="3"><br/></td></tr>
+			{% endfor %}
+		</table>
+	</div>
+	{% endif %}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	{% if account.applicant %}
+	<br/>
+	<div>
+		<table>
+			<tr>
+				<td><h4>Experience</h4></td>
+				<td colspan="2" align="right">
+					<input type="button" value="Add Experience" onclick="window.location = '{% url experience_create %}';"/>
+				</td>
+			</tr>
+			
+			{% for experience in account.experience.all %}
+				<tr>
+					<td>Experience in: </td>
+					<td>{{experience.name|title}}</td>
+					<td>
+						<input type="button" value="Delete" onclick="window.location = '{% url experience_delete experience.slug %}';"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Experience Level: </td>
+					<td>{{experience.level|title}}</td>
+					<td>
+						<input type="button" value="Edit" onclick="window.location = '{% url experience_edit experience.slug %}';"/>
+					</td>
+				</tr>
+				<tr>											
+					<td>Years of Experience: </td>
+					<td>{{experience.years_experience}}</td>
+					<td> </td>
+				</tr>
+				<tr><td colspan="3"><br/></td></tr>
+			{% endfor %}
+		</table>
+	</div>
+	{% endif %}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+
+{% endblock %}

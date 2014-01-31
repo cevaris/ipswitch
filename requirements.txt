@@ -1,0 +1,9 @@
+Django==1.4
+South==0.7.3
+django-extensions==0.9
+django-tastypie==0.9.11
+boto==2.6.0
+
+
+
+

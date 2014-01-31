@@ -1,0 +1,8 @@
+{% load base_extras %}
+<li><a href="{% url home %}" class="{% navactive path 'home' %}">Home</a></li>
+{% if account %}
+<li><a href="{% url activity_browse %}" class="{% navactive path 'activity_browse' %}">Browse</a></li>
+<li><a href="{% url activity_create %}" class="{% navactive path 'activity_create' %}">Create</a></li>
+{% endif %}
+<li><a href="{% url about %}" class="{% navactive path 'about' %}">About</a></li>
+<li><a href="{% url contact %}" class="{% navactive path 'contact' %}">Contact</a></li>

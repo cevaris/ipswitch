@@ -1,0 +1,57 @@
+*{margin:0;padding:0;}
+
+body{margin-left: auto; margin-right: auto; width: 50em;}
+
+#wrapper a,div,span{color:#444;  font-family: "Lucida Grande", Verdana, Helvetica, Arial, 
+					sans-serif; font-size: 15px;}
+
+#header{padding: 0px 0px 10px 0px; border-bottom: 1px #444 solid;}
+	#nav {display: inline;}
+	#nav li{ display: inline; list-style-type: none;}
+	#nav li a{font-weight: bold; padding: 5px 10px 3px 10px; text-decoration:none;}
+	#nav li a:hover{background-color: #444;color:white;}
+	#nav li a.active{font-weight: bold;background-color: #444;color:white;}
+	#account {display:inline; float: right;}
+	
+#content{ height: 100%; min-height: 575px; padding: 10px 0px 0px 0px; }
+	#form_input input.text {display: block; clear:left; margin: 0px 10px 10px 10px;}
+	#form_input input.button {min-width: 75px;}
+	#form_input label {margin: 10px 0px 0px 0px;}
+	#form_input label.hint {font-size: 13px; color:#004880;}
+	
+	#tinymce {color:#444;font-family: "Lucida Grande", Verdana, Helvetica, Arial,sans-serif; 
+			 font-size: 15px; width:auto;}
+	
+	#stream_posts {border-top: 1px solid #444; border-left: 1px solid #444; max-width: 700px;}
+	.stream_post  {border-bottom: 1px solid #444; padding: 5px 5px 5px 5px;}
+	.stream_post .post_user_vote {float: right; clear:both;}
+	.stream_post .post_rating {float: right;}
+	.stream_post .post_title label a {text-decoration: none;}
+	.stream_post .post_title label a:hover {text-decoration: underline;}
+	.stream_post .post_body   {clear:both;}
+		
+	.stream_comments {margin: 5px 0px 0px 0px; max-height: 200px; overflow: scroll;}
+	.stream_comments .comment_input {margin: 5px 0px 0px 20px; padding: 5px 5px 5px 5px; width: auto; border-bottom: 1px solid #444;
+					  border-top: 1px solid #444; border-left: 1px solid #444; background-color: #EEEEEE}
+	.stream_comments .comment_input .text {margin: 5px 0px 0px 0px; width:auto;}
+	.stream_comments .comment_input .info {text-align: right;}
+	.stream_comment {margin: 5px 0px 0px 20px; padding: 5px 5px 5px 5px; width: auto; border-bottom: 1px solid #444;
+					  border-top: 1px solid #444; border-left: 1px solid #444; background-color: #EEEEEE}
+	.stream_comment .comment_user_vote {float: right; clear:both;}
+	.stream_comment .comment_rating {float: right;}
+	.stream_comment .comment_title label a {text-decoration: none;}
+	.stream_comment .comment_title label a:hover {text-decoration: underline;}
+	.stream_comment .comment_body   {clear:both;}
+	
+.activity-tag-block{
+	cursor:pointer;
+	border: 1px solid black;
+	padding: 1px 3px 1px 3px;
+}
+.activity-tag-block:hover{
+	border: 3px solid black;
+	padding: 1px 3px 1px 3px;
+}	
+
+#footer{text-align: center; padding: 10px 0px 10px 0px; border-top: 1px #444 solid;}
+

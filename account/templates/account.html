@@ -1,0 +1,70 @@
+{% extends "site_base.html" %}
+
+{% block title %}{{account.user.first_name|title}} {{account.user.last_name|title}}{% endblock %}
+{% block content %}
+
+<h2>{{account.user.first_name|title}} {{account.user.last_name|title}}</h2>
+
+
+<br/>
+<div>
+	
+	<h3>Registered Activities</h3><br/>
+	
+	
+	
+	
+	{% if not activities %}
+	<a href="{% url activity_browse %}">Find an activity</a>
+	{% endif %}
+	{% for activity, activity_accept in activities %}
+
+	<h3><a href="{% url activity activity.id activity.slug %}" >{{ activity.name|title }}</a></h3>
+	<span>{{activity.created}}</span>
+	<span>
+		{% if activity_accept.progress.name == 'started' %}
+		<img width="22" height="22" align="center" src="{{STATIC_URL}}images/inprogress.png">
+		{% endif %}
+		{% if activity_accept.progress.name == 'completed' %}
+		<img width="22" height="22" align="center" src="{{STATIC_URL}}images/checkmark.png">
+		{% endif %}
+	</span>
+	<br/>
+	<div>
+
+
+	<div>
+		Description:<br/>
+		{{ activity.description|slice:"200" }}{% if activity.description|length > 200 %}...<a href="{% url activity activity.id activity.slug %}" >more</a>
+		{% endif %}
+		<br/>
+	</div>
+
+
+
+
+	{% if activity.tags.all %}
+		<br/>
+		<div>
+		{% for tag in activity.tags.all %}
+			<a href="{% url activity_browse_tag tag.name %}">{{tag.name}}</a>
+		{% endfor %}
+		</div>
+	{% endif %}
+	
+	
+</div>
+{% endfor %}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+
+{% endblock %}

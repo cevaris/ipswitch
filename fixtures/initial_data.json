@@ -1,0 +1,328 @@
+[
+	{
+		"pk": 1,
+		"model": "bet.bet",
+		"fields": {
+			"winner": 1,
+			"description": "Sagittis, sagittis cursus ultricies sit, rhoncus? Urna proin augue dapibus proin facilisis, placerat adipiscing ac turpis, et vel massa, eu ut, placerat? Risus sed, sociis.  Ut, parturient, a nascetur amet ac, placerat nisi ac. Etiam? Scelerisque parturient porttitor in? Purus a a amet rhoncus! Mattis velit dis. Egestas ultricies.",
+			"created": "2012-12-08T20:20:38.317Z",
+			"creator": 1,
+			"loser": 6,
+			"state": "active",
+			"title": "Sagittis, sagittis cursus ultricies sit.",
+			"wager": 1200,
+			"slug": "5ZI7JWWWJP",
+			"friend": 6
+		}
+	}, {
+		"pk": 2,
+		"model": "bet.bet",
+		"fields": {
+			"winner": null,
+			"description": "The best description.",
+			"created": "2012-12-08T20:33:29.023Z",
+			"creator": 1,
+			"loser": null,
+			"state": "active",
+			"title": "mockback",
+			"wager": 120,
+			"slug": "IWQI192W5W",
+			"friend": 2
+		}
+	}, {
+		"pk": 3,
+		"model": "bet.bet",
+		"fields": {
+			"winner": null,
+			"description": "The best description.",
+			"created": "2012-12-08T20:34:53.317Z",
+			"creator": 1,
+			"loser": null,
+			"state": "active",
+			"title": "mockback",
+			"wager": 120,
+			"slug": "BH9W8V0REW",
+			"friend": 2
+		}
+	}, {
+		"pk": 4,
+		"model": "bet.bet",
+		"fields": {
+			"winner": null,
+			"description": "Blah",
+			"created": "2012-12-08T22:29:11.407Z",
+			"creator": 15,
+			"loser": null,
+			"state": "active",
+			"title": "Test",
+			"wager": 333,
+			"slug": "MT665PJRC4",
+			"friend": 2
+		}
+	}, {
+		"pk": 5,
+		"model": "bet.bet",
+		"fields": {
+			"winner": null,
+			"description": "Blahsdflkjsdf ",
+			"created": "2012-12-08T22:30:12.801Z",
+			"creator": 15,
+			"loser": null,
+			"state": "active",
+			"title": "next",
+			"wager": 22,
+			"slug": "8LXFBYTC7R",
+			"friend": 2
+		}
+	}, {
+		"pk": 6,
+		"model": "bet.bet",
+		"fields": {
+			"winner": null,
+			"description": "Hello world",
+			"created": "2012-12-08T22:47:55.428Z",
+			"creator": 15,
+			"loser": null,
+			"state": "active",
+			"title": "this is a title",
+			"wager": 66,
+			"slug": "F6LI6IEVVU",
+			"friend": 2
+		}
+	}, {
+		"pk": 7,
+		"model": "bet.bet",
+		"fields": {
+			"winner": null,
+			"description": "Dfslkjsdlkfjdsklf",
+			"created": "2012-12-08T22:50:44.699Z",
+			"creator": 15,
+			"loser": null,
+			"state": "active",
+			"title": "blah",
+			"wager": 33,
+			"slug": "YLY9GFYGXG",
+			"friend": 2
+		}
+	}, {
+		"pk": 1,
+		"model": "account.friendinvite",
+		"fields": {
+			"invited": 3,
+			"state": "accepted",
+			"creator": 1
+		}
+	}, {
+		"pk": 2,
+		"model": "account.friendinvite",
+		"fields": {
+			"invited": 4,
+			"state": "pending",
+			"creator": 1
+		}
+	}, {
+		"pk": 1,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 10,
+			"losses": 3,
+			"friend_invites": [],
+			"user": 2,
+			"monies": 300,
+			"friends": [],
+			"slug": "GFL18NW6LE7PUTP9"
+		}
+	}, {
+		"pk": 2,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 18,
+			"losses": 12,
+			"friend_invites": [1, 2],
+			"user": 1,
+			"monies": 1980,
+			"friends": [2, 3],
+			"slug": "7WG8MDU81X"
+		}
+	}, {
+		"pk": 3,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 5,
+			"monies": 1000,
+			"friends": [],
+			"slug": "NATZ50ADR4ET8C40"
+		}
+	}, {
+		"pk": 4,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 3,
+			"losses": 2,
+			"friend_invites": [],
+			"user": 6,
+			"monies": 1120,
+			"friends": [],
+			"slug": "3NV30V59SIHK9H9F"
+		}
+	}, {
+		"pk": 5,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 7,
+			"monies": 1000,
+			"friends": [],
+			"slug": "SEOI4I5MW47LCHP9"
+		}
+	}, {
+		"pk": 6,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 1,
+			"friend_invites": [],
+			"user": 8,
+			"monies": 700,
+			"friends": [],
+			"slug": "U5AC1B31UAF2SV68"
+		}
+	}, {
+		"pk": 7,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 9,
+			"monies": 1000,
+			"friends": [],
+			"slug": "EAA4KVLMQMY6TEWH"
+		}
+	}, {
+		"pk": 8,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 10,
+			"monies": 1000,
+			"friends": [],
+			"slug": "97YRDDOGCF11WPVE"
+		}
+	}, {
+		"pk": 9,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 11,
+			"monies": 1000,
+			"friends": [],
+			"slug": "PT7BDVJV7AWDZT6R"
+		}
+	}, {
+		"pk": 10,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 12,
+			"monies": 1000,
+			"friends": [],
+			"slug": "25TNAGM42KB9ILAB"
+		}
+	}, {
+		"pk": 11,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 13,
+			"monies": 1000,
+			"friends": [],
+			"slug": "G2EGCSJZM4TPEW5X"
+		}
+	}, {
+		"pk": 12,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 14,
+			"monies": 1000,
+			"friends": [],
+			"slug": "82OLBA6TAL2WUIHW"
+		}
+	}, {
+		"pk": 13,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 15,
+			"monies": 1000,
+			"friends": [],
+			"slug": "IAGHCH43BC1HBY14"
+		}
+	}, {
+		"pk": 14,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 1,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 16,
+			"monies": 1150,
+			"friends": [],
+			"slug": "3I1IWFI5MQI2YNZN"
+		}
+	}, {
+		"pk": 15,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 17,
+			"monies": 1000,
+			"friends": [],
+			"slug": "EJFP99MVJRRKAN34"
+		}
+	}, {
+		"pk": 16,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 18,
+			"monies": 1000,
+			"friends": [],
+			"slug": "3MXLHYL7IT8SFFKE"
+		}
+	}, {
+		"pk": 17,
+		"model": "account.betaccount",
+		"fields": {
+			"wins": 0,
+			"losses": 0,
+			"friend_invites": [],
+			"user": 19,
+			"monies": 1000,
+			"friends": [],
+			"slug": "D7OEW93RSZI6X0NO"
+		}
+	}
+]
